@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:drawableTint="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/back_arrow"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_box"
+        app:layout_constraintStart_toStartOf="@+id/search_box"
+        app:layout_constraintTop_toTopOf="@+id/search_box" />
+
+    <LinearLayout
+        android:id="@+id/topSearchTool"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/search_box">
+        <include android:id="@+id/photo_search"
+            layout="@layout/photo_search_textview" />
+        <include android:id="@+id/video_search"
+            layout="@layout/video_search_textview"/>
+        <include android:id="@+id/links_search"
+            layout="@layout/links_search_textview"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSearchTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/topSearchTool">
+        <include android:id="@+id/gifs_search"
+            layout="@layout/gifs_search_textview"/>
+        <include android:id="@+id/audio_search"
+            layout="@layout/audio_search_textview"/>
+        <include android:id="@+id/document_search"
+            layout="@layout/document_search_textview"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

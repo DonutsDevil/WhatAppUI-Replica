@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@drawable/search_tag_background"
+    android:layout_marginStart="14dp"
+    android:text="Links"
+    android:paddingStart="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:drawableStartCompat="@drawable/link_search">
+
+</TextView>

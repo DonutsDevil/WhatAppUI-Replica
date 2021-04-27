@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="New Group"
+        app:showAsAction="never"
+        android:id="@+id/menu_newGroup"/>
+    <item android:id="@+id/menu_newbroadcast"
+            android:title="New Broadcast"
+            app:showAsAction="never"
+            android:orderInCategory="2"/>
+    <item android:id="@+id/menu_whatsapp_web"
+        android:title="Whatsapp Web"
+        app:showAsAction="never"
+        android:orderInCategory="3"/>
+    <item android:id="@+id/menu_settings"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:orderInCategory="4"/>
+    <item android:id="@+id/menu_newSearch"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="collapseActionView|ifRoom"/>
+    <item android:id="@+id/menu_newChat"
+        android:title="Create Chat"
+        android:icon="@drawable/chat"
+        app:showAsAction="ifRoom"/>
+</menu>

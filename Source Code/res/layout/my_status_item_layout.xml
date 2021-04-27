@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ChatDisplayImage"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11sp"
+        android:src="@drawable/text_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/tab_icon_selected"
+        android:backgroundTint="@color/Green"
+        android:src="@drawable/add_vector"
+        app:layout_constraintBottom_toBottomOf="@id/ChatDisplayImage"
+        app:layout_constraintRight_toRightOf="@id/ChatDisplayImage" />
+
+    <TextView
+        android:id="@+id/group_Person_Name"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ChatDisplayImage"
+        app:layout_constraintStart_toEndOf="@+id/ChatDisplayImage"
+        app:layout_constraintTop_toTopOf="@+id/ChatDisplayImage"
+        android:text="My Status" />
+
+    <TextView
+        android:id="@+id/summaryText"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@id/group_Person_Name"
+        app:layout_constraintTop_toBottomOf="@id/group_Person_Name"
+        android:text="Tap to add status update" />
+
+
+    <TextView
+        android:id="@+id/RecentUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:text="Recent Updates"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ChatDisplayImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

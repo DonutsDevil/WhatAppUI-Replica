@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="95dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@drawable/search_tag_background"
+    android:layout_marginStart="14dp"
+    android:text="Videos"
+    android:paddingStart="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:drawableStartCompat="@drawable/ic_baseline_videocam_24"
+    app:drawableTint="#6F6F6F">
+
+</TextView>
