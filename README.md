@@ -35,6 +35,6 @@ This is implemented in [CallFragment.java](https://github.com/DonutsDevil/WhatAp
 
 #### LAST POINT
 
-[MainActivity.java](https://github.com/DonutsDevil/WhatAppUI-Replica/blob/main/Source%20Code/Java%20Main/MainActivity.java) This is the Entry point for the application.    
+[MainActivity.java](https://github.com/DonutsDevil/WhatAppUI-Replica/blob/main/Source%20Code/Java%20Main/MainActivity.java) This is the Entry point of application.    
 And you will also notice that I have used ***NestedScrollView*** in each ***Fragments XML*** instead of using it in [activity_main.xml](https://github.com/DonutsDevil/WhatAppUI-Replica/blob/main/Source%20Code/res/layout/activity_main.xml)      
 Cause Doing so will solve the issue of ViewPager2 having height as of the *First Fragment* in our case its *ChatFragment*  
